@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply antialiased text-gray-900 bg-gray-50;
+  }
+}
+
+/* Safe area for iOS home indicator */
+.pb-safe {
+  padding-bottom: env(safe-area-inset-bottom);
+}
